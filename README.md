@@ -2,6 +2,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 # crear directorio build para desplegar a produccion
 npm run build
+renombrar carpeta build por docs - para desplegar en github
 
 ## Available Scripts
 
