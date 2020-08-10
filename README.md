@@ -4,6 +4,20 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 npm run build
 renombrar carpeta build por docs - para desplegar en github
 
+# entorno de pruebas
+npm i --save-dev enzyme enzyme-adapter-react-16
+- setupTests.js
+```
+import Enzyme from 'enzyme';
+import Adapter from 'enzyme-adapter-react-16';
+
+Enzyme.configure({ adapter: new Adapter() });
+```
+ npm install --save-dev enzyme-to-json
+
+ - para probar hooks
+# npm install --save-dev @testing-library/react-hooks
+
 ## Available Scripts
 
 In the project directory, you can run:

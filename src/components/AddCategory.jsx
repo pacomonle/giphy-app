@@ -11,11 +11,13 @@ const handleSubmit = (e) => {
     if(inputValue.trim().length > 2){
         setCategories(cat => [inputValue, ...cat])
         setInputValue('')
-    }
-   
-    
+    }   
 }
 
+const handleChange = (e) => {
+    console.log('handleChange activado', inputValue)
+    setInputValue(e.target.value)
+}
     return (
         <div>
             <h2>AddCategory</h2>
@@ -24,7 +26,7 @@ const handleSubmit = (e) => {
                     type="text" 
                     placeholder='selecciona categoria'
                     value={inputValue}
-                    onChange={(e) => {setInputValue(e.target.value)}}
+                    onChange={(e) => {handleChange(e)}}
                     />
             </form>
             

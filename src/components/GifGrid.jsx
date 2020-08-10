@@ -27,21 +27,15 @@ S
             <h3 className='animate__animated animate__flipInX'>{category}</h3>
 
             {
-                loading ? (<h3 className='animate__animated animate__flash'>Cargando...</h3>)
-                          :
-                          (
-                            <div className='card-grid'>
-            
-                            {
-                            images.map( item  => (
-                                <GifGridItem key={item.id} {...item}></GifGridItem>        
-                            ))  
-                            }
-        
-                            </div>
-                          )
+                loading && (<h3 className='animate__animated animate__flash'>Cargando...</h3>)                
             }
-
+            <div className='card-grid'>
+                {
+                images.map( item  => (
+                    <GifGridItem key={item.id} {...item}></GifGridItem>        
+                ))  
+                }
+            </div>
             
                 
           

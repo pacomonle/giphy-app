@@ -1,0 +1,39 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Pruebas en <GifGrid></GifGrid> should <GifGrid /> montado correctamete 1`] = `
+<Fragment>
+  <h3
+    className="animate__animated animate__flipInX"
+  >
+    Hola Mundo
+  </h3>
+  <h3
+    className="animate__animated animate__flash"
+  >
+    Cargando...
+  </h3>
+  <div
+    className="card-grid"
+  />
+</Fragment>
+`;
+
+exports[`Pruebas en <GifGrid></GifGrid> should mostrar items al cargar imagenes 1`] = `
+<Fragment>
+  <h3
+    className="animate__animated animate__flipInX"
+  >
+    Hola Mundo
+  </h3>
+  <div
+    className="card-grid"
+  >
+    <GifGridItem
+      id="ABC"
+      key="ABC"
+      title="Cualquier cosa"
+      url="https://localhost8080/any/cosa.jpg"
+    />
+  </div>
+</Fragment>
+`;

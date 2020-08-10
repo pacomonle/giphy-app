@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Pruebas GifGrid.test.js should mostrar valores de <GifGridItem></GifGridItem>  1`] = `
+<div
+  className="card animate__animated animate__fadeInBottomRight"
+>
+  <img
+    alt="un titulo"
+    src="http://localhost:8080"
+  />
+  <p>
+    un titulo
+  </p>
+</div>
+`;
